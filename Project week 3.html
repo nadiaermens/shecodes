@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bees</title>
+    <style>
+body {
+    background: rgb(253,248,225);
+background: linear-gradient(118deg, rgba(253,248,225,1) 18%, rgba(252,239,180,0.58) 53%, rgba(249,220,92,1) 89%);
+}
+
+div {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+h1 {
+    color: #f5cc00;
+    text-align: center;
+
+
+}
+
+h2 {
+    color: #ffd400;
+    text-align: center;
+    border: 1px solid #fcefb4;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 4px;
+
+}
+
+p {
+    text-align: center;
+    color: #f5cc00;
+    line-height: 1.5;
+    font-size: 15px;
+    border: 1px solid #fcefb4;
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    border-radius: 10px;
+}
+
+.learn {
+    display: block;
+    margin: 0 auto;
+    color: #f5cc00;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.learn:hover {
+    text-decoration: underline;
+}
+
+button {
+display: block;
+margin: 30px auto;
+color: white;
+background-color: #f5cc00;
+padding: 15px 20px;
+border-radius: 10px;
+transition: all 200ms ease-in-out;
+border: none;
+box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3)
+}
+
+button:hover {
+    border: 3px solid #f5cc00;
+    background-color: white;
+    color:#f5cc00;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: right;
+    font-size: 10px;
+    padding: 0px 0px 0px 0px;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+<h1>
+    I love BEES!🐝
+</h1>
+<h2>
+    Let me tell you a bit more about beekeeping!🌻🍯
+</h2>
+
+
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/157/original/boris-smokrovic-gr7ZkoZnHXU-unsplash.jpg?1670047976" alt="beekeeper">
+     
+
+<p>
+    <span>A <em>beekeeper</em> is a person who keeps honey bees 🐝.</span> <br>
+    Beekeepers are also called honey farmers, apiarists, or less commonly, apiculturists. The term beekeeper refers to a person who keeps honey bees in beehives, boxes, or other receptacles. The
+    beekeeper does not control the creatures. The beekeeper owns the hives or boxes and associated equipment. The bees are
+    free to forage or leave as they desire. Bees usually return to the beekeeper's hive as the hive presents a
+    clean, dark, sheltered home.
+</p>
+
+<a href="https://en.wikipedia.org/wiki/Beekeeper" target="_blank" class="learn">📖 Read more about beekeepers on <strong>Wikipedia</strong>!</a>
+
+
+<button>
+    Interested to become a beekeeper? Click here!
+</button>
+<hr />
+<footer>
+    This page was built by <strong>Nadia Ermens</strong>
+</footer>
+</div>
+
+<script>
+
+function beeKeeper() {
+    let name = prompt("What is your name?");
+    let loveBees = prompt("Do you love bees?");
+
+    if (loveBees === "yes") {
+        let email = prompt("What is your email address?");
+    alert("Thank you, " + name + "! We will be in touch by email, so your beekeeping journey can begin!🍯")
+    } else {
+        alert("Too bad! Come back when you change your mind!🐝");
+    }
+}
+
+let beeButton = document.querySelector("button");
+beeButton.addEventListener("click", beeKeeper);
+
+
+</script>
+</body>
+</html>
